@@ -101,11 +101,3 @@ class MyConfig {
     }
 }
 
-fun main() {
-    val context = AnnotationConfigApplicationContext(
-        MyConfig::class.java
-    )
-
-    val router: Router = context.getBean(Router::class.java)
-    logger.info("router has {} handlers", router.handlers.size)
-}
