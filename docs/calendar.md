@@ -4,7 +4,7 @@
 
 * Project - phase 1
   * Publication: 2021-03-21 (W3).
-  * Delivery: 2021-04-18 (W6).
+  * Delivery: ~2021-04-18 (W6)~ 2021-04-26 (W7).
   * Demos: week 8.
 
 * Project - phase 2
@@ -36,7 +36,7 @@
   * HTTP caching
 
 * W6 - 2022-04-11
-  * No classes on this weed due to Easter holidays.
+  * No classes on this week due to Easter holidays.
  
 * W7 - 2022-04-18
   * The browser as an application execution platform. 
