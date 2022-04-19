@@ -46,7 +46,7 @@
   * The browsers fetch API.
   * Usage examples
   
-* W8
+* W8 - 2022-04-25
   * Student presentations for phase 1.
 
 * W9 - 2022-05-02

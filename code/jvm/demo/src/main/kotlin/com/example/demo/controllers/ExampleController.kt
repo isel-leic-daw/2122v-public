@@ -1,6 +1,8 @@
 package com.example.demo.controllers
 
 import com.example.demo.ClientIp
+import com.example.demo.Siren
+import com.example.demo.SomeDomainException
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -22,8 +24,8 @@ class ExampleController(
     @GetMapping("/0")
     fun get0() = greetingsService.greet()
 
-    @GetMapping("/1/{id}")
-    fun get1(@PathVariable id: Int) = "Request done with $id"
+    @GetMapping(Uris.Examples.Resource1.PATH)
+    fun get1(@PathVariable id: Int) = "Request done with $id, link to next is ${Uris.Examples.Resource1.make(id + 1)}"
 
     @GetMapping("/2")
     fun get2() = StudentOutputModel(
@@ -55,6 +57,9 @@ class ExampleController(
 
     @GetMapping("/6")
     fun get6() = URI.create("https://www.isel.pt")
+
+    @GetMapping("/7")
+    fun get7(): Nothing = throw SomeDomainException()
 
 }
 

@@ -14,7 +14,7 @@ class DemoApplicationConfig {
     @Bean
     fun getGreetingsService(): GreetingsService {
 
-		logger.info("Creating GreentingsService")
+		logger.info("Creating GreetingsService")
 
         return object : GreetingsService {
             override fun greet() = "Hello from the greeting service"
