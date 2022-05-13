@@ -1,6 +1,9 @@
 module.exports = {
     mode: 'development',
     devtool: false,
+    devServer: {
+        hot: false
+    },
     resolve: {
         extensions: ['.js', '.ts', '.tsx'],
     },

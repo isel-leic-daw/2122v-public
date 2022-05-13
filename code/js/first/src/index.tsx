@@ -1,27 +1,12 @@
-/** @jsx createElement */
-import {message, message2} from './messages'
-import {message as m2} from './messages2'
-import { createElement } from './view'
+import * as React from 'react'
+import { createRoot } from 'react-dom/client'
+import { App } from './App'
 
-const items = ['item 1', 'item 2', 'item 3', 'item 4']
-document.body.appendChild(
-    createElement('div', null,
-        createElement('h1', null, 'Example'),
-        createElement('ul', null,
-            ...items.map(item => createElement('li', null, item))
-        )
-    )
-)
+const root = createRoot(document.getElementById('container'))
+// root.render(React.createElement(App))
 
-document.body.appendChild(
-    <div>
-        <h1>Example</h1>
-        <h2>Sub heading</h2>
-    </div>
-)
-
-const m = message
-
-console.log(m)
-console.log(message2)
-console.log(m2)
+let repeats = 0
+setInterval(() => {
+    repeats += 1
+    root.render(<App repeats={repeats} />)
+}, 2000)

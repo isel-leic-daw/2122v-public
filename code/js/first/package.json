@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
     "ts-loader": "^9.3.0",
     "typescript": "^4.6.4",
     "webpack": "^5.72.0",
@@ -18,6 +20,8 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
-    "urijs": "^1.19.11"
+    "urijs": "^1.19.11",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
