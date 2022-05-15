@@ -3,14 +3,14 @@
 ## Important dates:
 
 * Project - phase 1
-  * Publication: 2021-03-21 (W3).
-  * Delivery: ~2021-04-18 (W6)~ 2021-04-26 (W7).
+  * Publication: 2022-03-21 (W3).
+  * Delivery: ~2022-04-18 (W6)~ 2022-04-26 (W7).
   * Demos: week 8.
 
 * Project - phase 2
-  * Publication: 2021-05-02 (W9).
-  * Delivery: 2021-06-04 (W13).
-  * Presentations and evaluations: weeks 14 and 15.
+  * Publication: ~2022-05-02 (W9)~ 2022-05-16 (W11)
+  * Delivery: ~2022-06-04 (W13)~ 2022-06-04 (W14).
+  * Presentations and evaluations: weeks 15 and 16.
   
 ## Weekly planned outline
 
