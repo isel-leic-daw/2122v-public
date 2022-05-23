@@ -20,8 +20,9 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
-    "urijs": "^1.19.11",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "urijs": "^1.19.11",
+    "react-router-dom": "^6.3.0"
   }
 }
