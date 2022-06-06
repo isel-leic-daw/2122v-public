@@ -6,13 +6,15 @@ import * as React from 'react'
 // import { Timer } from './Timer2'
 import { RouterExample } from './RouterExample2'
 import { InputDemo } from './InputDemo'
+// import { Example } from './contextDemo'
+// import { Example } from './propsChange'
+import { Example } from './renderExample'
+import { FetchExample } from './Fetch'
 
 export function App(
     { repeats }: { repeats: number }
 ) {
     return (
-        <React.StrictMode>
-            <RouterExample />
-        </React.StrictMode>
+        <FetchExample />
     )
 }
