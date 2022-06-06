@@ -5,4 +5,3 @@ The course final grade is based on the following items:
   * The projects are done by groups of 3 students.
   * Project delivery is done via the group's Git repository.
   * There will be a student's presentation for each phase (see [calendar](calendar.md)).
-  * 

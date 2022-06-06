@@ -9,7 +9,7 @@
 
 * Project - phase 2
   * Publication: ~2022-05-02 (W9)~ 2022-05-16 (W11)
-  * Delivery: ~2022-06-04 (W13)~ 2022-06-04 (W14).
+  * Delivery: ~2022-06-04 (W13)~ ~2022-06-04 (W14)~ 2022-06-15 (W14).
   * Presentations and evaluations: weeks 15 and 16.
   
 ## Weekly planned outline

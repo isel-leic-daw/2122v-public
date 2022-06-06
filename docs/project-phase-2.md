@@ -14,4 +14,4 @@ If required, the HTTP API can be improved.
 
 ## Delivery
 
-* This phase 2 must be delivered until June 11 (end of week 14) via the creation of a `0.2.0` tag on the GitHub repository.
+* This phase 2 must be delivered until ~June 11 (end of week 14)~ June 15 (middle of week 15) via the creation of a `0.2.0` tag on the GitHub repository.
