@@ -38,26 +38,28 @@ function reducer(state: State, action: Action): State {
     }
 }
 
-async function doFetch(url: string, dispatcher: (action: Action) => void) {
+async function doFetch(url: string, dispatcher: (action: Action) => void, signal: AbortSignal) {
     if (url == '') {
         dispatcher({ type: 'reset' })
         return
     }
     dispatcher({ type: 'fetch-started', url: url })
     try {
-        const response = await fetch(url)
+        const response = await fetch(url, { signal })
         dispatcher({ type: 'response', response: response })
         if (response.ok) {
             const payload = await response.json()
             dispatcher({ type: 'payload', payload: payload })
         }
     } catch (error) {
+        console.log(`error '${error.message}'`)
         dispatcher({ type: 'error', error: error })
     }
 }
 
 function fetchEffect(url: string, dispatcher: (action: Action) => void) {
     let isCancelled = false
+    const abortController = new AbortController()
     const filteredDispatcher = (action: Action) => {
         if (!isCancelled) {
             dispatcher(action)
@@ -65,10 +67,11 @@ function fetchEffect(url: string, dispatcher: (action: Action) => void) {
             console.log('ignoring action')
         }
     }
-    doFetch(url, filteredDispatcher)
+    doFetch(url, filteredDispatcher, abortController.signal)
     return () => {
         // cancel
         isCancelled = true
+        abortController.abort()
     }
 }
 
